@@ -3,7 +3,7 @@ FROM node:20-bookworm-slim
 
 # Copy repository
 COPY . /metrics
-WORKDIR /metrics
+WORKDIR /gavinkress
 
 # Setup
 RUN chmod +x /metrics/source/app/action/index.mjs \
