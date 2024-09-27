@@ -3,8 +3,8 @@ export default async function({login, q, imports, data, computed, rest, graphql,
   //Plugin execution
   try {
     //Check if plugin is enabled and requirements are met
-    if ((!q.<%= name %>) || (!imports.metadata.plugins.<%= name %>.enabled(enabled, {extras})))
-      return null
+    if ((!q.<%= name %>) || (!imports.metadata.plugins.<%= name %>.enabled(enabled, {extras}))){
+      return null}
     //Results
     return {}
   }
